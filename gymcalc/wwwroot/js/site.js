@@ -72,7 +72,7 @@ $(document).on("keyup", function (e) {
 
         var targetBench = applyInterpolationFactor(interpolatedBenchClass[squatClass], interpolatedBenchClass[squatClass + 1], squatInterpolationFactor);
 
-        $('#bench').val(targetBench);
+        $('#bench').val(Math.round(targetBench));
 
 
 
@@ -80,7 +80,7 @@ $(document).on("keyup", function (e) {
 
         var targetDeadlift = applyInterpolationFactor(interpolatedDeadliftClass[squatClass], interpolatedDeadliftClass[squatClass + 1], squatInterpolationFactor);
 
-        $('#deadlift').val(targetDeadlift);
+        $('#deadlift').val(Math.round(targetDeadlift));
 
 
 
@@ -88,7 +88,7 @@ $(document).on("keyup", function (e) {
 
         var targetPress = applyInterpolationFactor(interpolatedPressClass[squatClass], interpolatedPressClass[squatClass + 1], squatInterpolationFactor);
 
-        $('#press').val(targetPress);
+        $('#press').val(Math.round(targetPress));
 
 
 
@@ -96,7 +96,7 @@ $(document).on("keyup", function (e) {
 
         var targetPowerClean = applyInterpolationFactor(interpolatedPowerCleanClass[squatClass], interpolatedPowerCleanClass[squatClass + 1], squatInterpolationFactor);
 
-        $('#powerclean').val(targetPowerClean);
+        $('#powerclean').val(Math.round(targetPowerClean));
     }
 });
 
